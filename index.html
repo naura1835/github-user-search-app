@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="container">
+      <nav>
+        <h1>devfinder</h1>
+        <div class="color-preference">
+          <label class="color-preference__mode" for="choice"> Light </label>
+          <input type="checkbox" name="mode" id="choice" value="light" />
+        </div>
+      </nav>
+      <div class="search">
+        <svg
+          class="search-icon"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M21 21L16.514 16.506L21 21ZM19 10.5C19 12.7543 18.1045 14.9163 16.5104 16.5104C14.9163 18.1045 12.7543 19 10.5 19C8.24566 19 6.08365 18.1045 4.48959 16.5104C2.89553 14.9163 2 12.7543 2 10.5C2 8.24566 2.89553 6.08365 4.48959 4.48959C6.08365 2.89553 8.24566 2 10.5 2C12.7543 2 14.9163 2.89553 16.5104 4.48959C18.1045 6.08365 19 8.24566 19 10.5V10.5Z"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <input
+          type="search"
+          name="search-bar"
+          placeholder="Search Github Username..."
+        />
+        <button class="btn">Search</button>
+      </div>
+      <article class="profile-card">
+        <img src="" class="profile-pic" alt="profile picture" />
+        <div class="profile">
+          <h2 class="full-name"></h2>
+          <small class="created"></small>
+          <span class="username"></span>
+          <p class="bio"></p>
+        </div>
+        <section class="other-details">
+          <div class="stats">
+            <h4 class="title">Repo</h4>
+            <h4 class="title">Followers</h4>
+            <h4 class="title">Following</h4>
+            <h3 class="subtitle repo"></h3>
+            <h3 class="subtitle followers"></h3>
+            <h3 class="subtitle following"></h3>
+          </div>
+          <section class="social">
+            <li class="social__platform location"></li>
+            <li class="social__platform twitter"></li>
+            <li class="social__platform website"></li>
+            <li class="social__platform company"></li>
+          </section>
+        </section>
+      </article>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
