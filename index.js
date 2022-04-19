@@ -126,11 +126,11 @@ mode.addEventListener("click", () => {
     document.body.classList.remove("dark-mode");
     if (mode.checked) {
       label.textContent = "light";
-      mode.style.backgroundImage = "url('images/sun.svg')";
+      mode.style.background = "url('/images/sun.svg')";
       document.body.classList.add("dark-mode");
     } else {
       label.textContent = "dark";
-      mode.style.backgroundImage = "url('images/moon.svg')";
+      mode.style.background = "url('/images/moon.svg')";
       document.body.classList.add("light-mode");
     }
   } else {
@@ -138,11 +138,11 @@ mode.addEventListener("click", () => {
     document.body.classList.remove("dark-mode");
     if (mode.checked) {
       label.textContent = "dark";
-      mode.style.backgroundImage = "url('images/moon.svg')";
+      mode.style.background = "url('/images/moon.svg')";
       document.body.classList.add("light-mode");
     } else {
       label.textContent = "light";
-      mode.style.backgroundImage = "url('images/sun.svg')";
+      mode.style.background = "url('/images/sun.svg')";
       document.body.classList.add("dark-mode");
     }
   }
