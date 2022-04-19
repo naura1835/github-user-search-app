@@ -4,23 +4,15 @@
   align-items: center;
 }
 
-// @mixin mode($value) {
-//   @if $value == dark {
-//     @media (prefers-color-scheme: dark) {
-//       $background-color: #141c2f;
-//       $primary-color: #1f2a48;
-//       $secondary-color: #0278fe;
-//       $accent-color: #275797;
-//       $text-color: #ffffff;
-//     }
-//   } @else {
-//     @media (prefers-color-scheme: light) {
-//       $background-color: #f5f8ff; //light-mode
-//       $primary-color: #ffffff;
-//       $secondary-color: darken(#0278fe, 10%);
-//       $accent-color: lighten(#275797, 20%);
-//       $text-color: #a3aaba; // main text color
-//       $text-color2: #526fa7;
-//     }
-//   }
-// }
+$break-points: (
+  "tablet": "846px",
+  "mobile": "560px",
+);
+@mixin breakPoint($size) {
+  @media (max-width: map-get($break-points, $size)) {
+    @content;
+  }
+}
+@function getColor($color, $percent) {
+  @return lighten($color, $percent);
+}
