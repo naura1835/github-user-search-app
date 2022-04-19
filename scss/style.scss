@@ -43,7 +43,7 @@
       -webkit-appearance: none;
       appearance: none;
       margin: 0;
-      background: url("/images/sun.svg");
+      background: url(".../images/sun.svg");
       background-size: contain;
       background-repeat: no-repeat;
       height: 1.6rem;
@@ -51,7 +51,7 @@
       //   aspect-ratio: 1;
     }
     input[type="checkbox"]:checked {
-      background: url("/images/moon.svg");
+      background: url("../images/moon.svg");
     }
   }
 
