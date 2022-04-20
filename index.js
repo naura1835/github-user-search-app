@@ -20,7 +20,7 @@ let company = document.querySelector(".company");
 search.addEventListener("click", () => {
   searchBar.focus();
 });
-const debounce = (cb, delay = 1000) => {
+const debounce = (cb, delay = 500) => {
   let timeout;
   return (...args) => {
     clearTimeout(timeout);
